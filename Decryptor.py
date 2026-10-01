@@ -28,7 +28,6 @@ def decrypt (message, key):
                decrypted += letter           
      return decrypted
 
-
 message = "epomj ezno yudndve. nuopxuiv diozgdbzixev rkgtrv iv ivnuV xjyudzijnx. vwt fjiotipjrvx rturvidz, rtngde fjy uvyvidv iv: epomj.ezno.yudndve@vyzkxd.do"
 best_confidence = None
 best_decryption = None
@@ -40,9 +39,16 @@ for i in range(1,26):
    print(sentence)
    
    results = detectlanguage.detect(sentence)
+   if not results:
+        continue
+   
    if results[0]['language'] == "pl" and (best_confidence is None or results[0]['score'] > best_confidence):
            best_confidence = results[0]['score']
            best_decryption = sentence
+
+if best_decryption is None:
+    print("Nie znaleziono polskiego tekstu. Sprawdź wiadomość lub spróbuj innego tekstu.")
+    raise SystemExit(1)
 
 pattern = r"[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
 emails = re.findall(pattern, best_decryption)
