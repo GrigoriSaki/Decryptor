@@ -18,8 +18,6 @@ epomj ezno yudndve. nuopxuiv diozgdbzixev rkgtrv iv ivnuV xjyudzijnx. vwt fjioti
 
 Wyjście (skrócone):
 
-(...wyniki dla pozostałych przesunięć...)
-
 Best decryption:
 jutro jest dzisiaj. sztuczna inteligencja wplywa na naszA codzienosc. aby kontynuowac wyzwanie, wyslij kod zadania na: jutro.jest.dzisiaj@adepci.it
 
@@ -38,6 +36,7 @@ bash
 git clone https://github.com/GrigoriSaki/Decryptor.git
 cd Decryptor
 pip install -r requirements.txt
+
 Konfiguracja
 
 Klucz API jest odczytywany ze zmiennej środowiskowej DETECTLANG_API_KEY. Nie jest zapisany w kodzie.
