@@ -58,4 +58,4 @@ python decryptor.py
 Ograniczenia
 Obsługiwany jest wyłącznie alfabet łaciński (a-z, A-Z). Polskie znaki diakrytyczne (ą, ę, ż itd.) nie są przesuwane.
 Wybór poprawnego wyniku zależy od trafności wykrywania języka. Bardzo krótkie teksty mogą być rozpoznane błędnie.
-Skrypt wysyła 25 zapytań do API na jedno odszyfrowanie, więc działa wolniej i zużywa limit darmowego konta.
+Skrypt wysyła 25 zapytań do API na jedno odszyfrowanie.
