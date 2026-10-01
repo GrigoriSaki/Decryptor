@@ -2,7 +2,7 @@ Skrypt w Pythonie, który łamie szyfr Cezara metodą brute force, sam wybiera p
 
 Projekt powstał jako rozwiązanie zadania konkursowego: w zaszyfrowanej wiadomości ukryty był adres e-mail, który trzeba było odnaleźć.
 
-Jak to działa
+Jak to działa:
 Skrypt próbuje wszystkich 25 możliwych przesunięć szyfru Cezara.
 Każdy z 25 wyników jest wysyłany do Detect Language API.
 Spośród wyników rozpoznanych jako polski wybierany jest ten z najwyższym współczynnikiem pewności.
@@ -26,18 +26,18 @@ jutro.jest.dzisiaj@adepci.it
 
 W tym przykładzie poprawne przesunięcie to 21.
 
-Wymagania
+Wymagania:
 Python 3.10 lub nowszy
 Biblioteka detectlanguage
 Darmowy klucz API z detectlanguage.com
 Połączenie z internetem
-Instalacja
+Instalacja:
 bash
 git clone https://github.com/GrigoriSaki/Decryptor.git
 cd Decryptor
 pip install -r requirements.txt
 
-Konfiguracja
+Konfiguracja:
 
 Klucz API jest odczytywany ze zmiennej środowiskowej DETECTLANG_API_KEY. Nie jest zapisany w kodzie.
 
@@ -48,7 +48,7 @@ $env:DETECTLANG_API_KEY = "twoj_klucz"
 
 Jeśli zmienna nie jest ustawiona, skrypt kończy działanie z czytelnym komunikatem błędu.
 
-Uruchomienie
+Uruchomienie:
 
 Tekst do odszyfrowania ustawiasz w zmiennej message w pliku decryptor.py, a następnie:
 
